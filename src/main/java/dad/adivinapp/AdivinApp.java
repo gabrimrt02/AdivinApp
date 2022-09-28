@@ -77,7 +77,8 @@ public class AdivinApp extends Application{
                 alerta = new Alert(AlertType.ERROR);
                 alerta.setTitle("AdivinApp");
                 alerta.setHeaderText("Error");
-                alerta.setContentText("El número introducido no es válido");    
+                alerta.setContentText("El número introducido no es válido");
+                alerta.showAndWait();
             } else if(numero < numeroAleatorio) {
                 alerta = new Alert(AlertType.WARNING);
                 alerta.setTitle("AdivinApp");
