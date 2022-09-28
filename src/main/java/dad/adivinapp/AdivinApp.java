@@ -84,9 +84,9 @@ public class AdivinApp extends Application{
                 alerta.setTitle("AdivinApp");
                 alerta.setHeaderText("¡Has fallado!");
                 if(numero < numeroAleatorio)
-                    alerta.setContentText("El número a adivinar es mayor que " + numero);
+                    alerta.setContentText("El número a adivinar es mayor que " + numero + "\nVuelve a intentarlo");
                 else
-                    alerta.setContentText("El número a adivinar es menor que " + numero);
+                    alerta.setContentText("El número a adivinar es menor que " + numero + "\nVuelve a intentarlo");
                 alerta.showAndWait();
                 numeroIntentos++;
             }
