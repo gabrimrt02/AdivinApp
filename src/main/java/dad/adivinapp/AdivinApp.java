@@ -97,12 +97,13 @@ public class AdivinApp extends Application{
             alerta.setTitle("AdivinApp");
             alerta.setHeaderText("Error");
             alerta.setContentText("El número introducido no es válido");
-        
+            alerta.showAndWait();
+
         } catch (Exception e) {
             System.err.println("ERROR - Ha ocurrido un error inesperado");
         }
 
-        entradaNumero.requestFocus();
+        entradaNumero.clear();
     }
 
     private void crearAleatorio() {
