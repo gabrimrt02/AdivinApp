@@ -73,7 +73,7 @@ public class AdivinApp extends Application{
                 alerta.showAndWait();
                 crearAleatorio();
                 numeroIntentos = 0;
-            }  else if (numero < 0 || numero > 100) {
+            }  else if (numero < 1 || numero > 100) {
                 alerta = new Alert(AlertType.ERROR);
                 alerta.setTitle("AdivinApp");
                 alerta.setHeaderText("Error");
