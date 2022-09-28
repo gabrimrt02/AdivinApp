@@ -107,7 +107,7 @@ public class AdivinApp extends Application{
 
     private void crearAleatorio() {
         Random rand = new Random();
-        numeroAleatorio = rand.nextInt(100);
+        numeroAleatorio = rand.nextInt(99) + 1;
     }
 
     public static void main( String[] args ) {
