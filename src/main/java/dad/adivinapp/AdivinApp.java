@@ -79,18 +79,14 @@ public class AdivinApp extends Application{
                 alerta.setHeaderText("Error");
                 alerta.setContentText("El número introducido no es válido");
                 alerta.showAndWait();
-            } else if(numero < numeroAleatorio) {
+            } else {
                 alerta = new Alert(AlertType.WARNING);
                 alerta.setTitle("AdivinApp");
                 alerta.setHeaderText("¡Has fallado!");
-                alerta.setContentText("El número a adivinar es mayor que " + numero);
-                alerta.showAndWait();
-                numeroIntentos++;
-            } else if (numero > numeroAleatorio) {
-                alerta = new Alert(AlertType.WARNING);
-                alerta.setTitle("AdivinApp");
-                alerta.setHeaderText("¡Has fallado!");
-                alerta.setContentText("El número a adivinar es menor que " + numero);
+                if(numero < numeroAleatorio)
+                    alerta.setContentText("El número a adivinar es mayor que " + numero);
+                else
+                    alerta.setContentText("El número a adivinar es menor que " + numero);
                 alerta.showAndWait();
                 numeroIntentos++;
             }
